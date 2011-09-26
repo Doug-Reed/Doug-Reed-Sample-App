@@ -1,0 +1,23 @@
+<h1><%if @search.errors.any? %>ERROR<% else %> You searched on <%= @search.searchtext %>.<% end %></h1>
+
+<table  cellspacing="10">
+<tr width="100%">
+	<% @urls.each do |url| %>
+	<td width="20%"%><%= image_tag url%></td>
+    <% end %>
+</tr>
+</table>
+<table>
+<tr>
+	<td width="100%"></td>
+</tr>
+<tr/>
+<tr>
+	<td><h3>Care to try again?</h3></td>
+</tr>
+<tr><td><%= render 'form' %></td></tr>
+<tr><td><h4>Your last <%= @searches.count %> <% if @searches.count < 2 %><%= "search was"%><% else %><%= "searches were"%><% end %>...</h4></td></tr>
+	<% @searches.each do |search| %>
+	 <tr><td><%=search.searchtext %> </td></tr>
+	<%end%>
+</table>

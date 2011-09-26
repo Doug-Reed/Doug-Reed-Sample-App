@@ -2,7 +2,7 @@ Matt,
 
 Per your instructions, here is the sample application. I won't have any time to work on this tomorrow, and so this will have to be my submission. 
 
-Most of the functionality (call the API, validate the output, parse the output into URLs) is in the searches_helper.rb class. Had this been a Java app, I probably would have encapsulated the behavior into a model class. I don't know if putting these behaviors into the helper class is the "Rails" way to do things. 
+Most of the functionality (call the API, validate the output, parse the output into URLs) is in the searches_helper.rb class. Had this been a Java app, I probably would have encapsulated these behaviors into a model class. I don't know if putting these behaviors into the helper class is the "Rails" way to do things. 
 
 I used the "text" method rather than the "tags" method of searching for photos. Trial and error showed that this gave a better result. I used the license types, rather than the "IsCommons" tag for the same reason. 
 
